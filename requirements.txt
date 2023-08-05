@@ -1,0 +1,4 @@
+Pillow
+ultralytics
+tqdm
+datasets
