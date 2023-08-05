@@ -15,10 +15,9 @@ def predict(image: Image, model_path: str):
 
 if __name__ == "__main__":
     dataset = load_dataset('Kili/plastic_in_river', num_proc=12)
-    id = 20
-    img = dataset['test'][id]['image']
+    img_path = dataset['test'][20]['image']
     #choosing the best training checkpoint
     model_path = 'runs/detect/train/weights/best.pt'
-    pred_img = predict(image=img, model_path=model_path)
+    pred_img = predict(image=img_path, model_path=model_path)
     pred_img.save('output.png')
 

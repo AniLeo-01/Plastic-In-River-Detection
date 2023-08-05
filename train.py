@@ -6,7 +6,7 @@ model.train(
     data = 'plastic.yaml',
     epochs = 20,
     imgsz = (1280, 720), #(w, h)
-    batch = 4,
+    batch = 16,
     optimizer = 'Adam',
     lr0 = 1e-3,
     resume=True
